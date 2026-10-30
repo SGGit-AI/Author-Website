@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-site-language="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f2eee5" />
+    <meta name="description" content="The official website of Subhajit Ghosh. Explore writing across AI, leadership, thriller, and horror." />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <a class="skip-link" href="#main-content" data-copy="skipContent">Skip to content</a>
+    <header class="site-header">
+        <nav class="nav-wrap wrap" aria-label="Main navigation">
+            <a class="wordmark" asp-page="/Index" aria-label="Subhajit Ghosh home"><span class="wordmark-symbol">S<span>G</span></span><span class="wordmark-name">Subhajit Ghosh<small data-copy="authorLabel">AUTHOR · THINKER · STORYTELLER</small></span></a>
+            <div class="nav-links">
+                <a asp-page="/Index" data-copy="navHome">Home</a>
+                <a asp-page="/Books" data-copy="navBooks">Books</a>
+                <a href="/Index#about" data-copy="navAbout">About</a>
+                <a href="/Index#contact" data-copy="navContact">Contact</a>
+            </div>
+            <div class="language-switch" role="group" aria-label="Choose language" data-label="languageLabel">
+                <button type="button" data-language="en" aria-pressed="true">EN</button>
+                <span aria-hidden="true"></span>
+                <button type="button" data-language="bn" aria-pressed="false" lang="bn">বাংলা</button>
+            </div>
+        </nav>
+    </header>
+    <main id="main-content" role="main">
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <a class="footer-mark" asp-page="/Index">SG<span>®</span></a>
+            <p data-copy="footerNote">A reader’s place to explore the work of Subhajit Ghosh.</p>
+            <div class="footer-meta"><a asp-page="/Privacy" data-copy="privacyLink">Privacy</a><span>© @DateTime.UtcNow.Year · <span data-copy="footerRights">All rights reserved</span></span></div>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

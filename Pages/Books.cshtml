@@ -1,0 +1,42 @@
+@page
+@model BooksModel
+@{
+    ViewData["Title"] = "Books | Subhajit Ghosh";
+}
+
+<section class="books-hero wrap">
+    <p class="eyebrow" data-copy="booksPageEyebrow">Published books</p>
+    <div class="books-title-row"><h1 data-copy="booksPageTitle">The books<span>.</span></h1><p data-copy="booksPageIntro">Browse published books with their covers, categories, publishers, and available purchase options.</p></div>
+    <div class="catalogue-rule"><span data-copy="catalogueNote">FOUR PUBLISHED TITLES</span><span>SUBHAJIT GHOSH <b>·</b> 2026</span></div>
+</section>
+
+<section class="wrap catalog-section" aria-labelledby="catalogue-heading">
+    <h2 class="catalogue-heading" id="catalogue-heading" data-copy="catalogueHeading">Published books</h2>
+    <div class="filter-row" role="group" aria-label="Filter by writing category" data-label="filterLabel">
+        <button class="filter-button is-active" type="button" data-filter="all" data-copy="filterAll" aria-pressed="true">All books <span>04</span></button>
+        <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">AI <span>01</span></button>
+        <button class="filter-button" type="button" data-filter="thriller" data-copy="filterThriller" aria-pressed="false">Thriller <span>02</span></button>
+        <button class="filter-button" type="button" data-filter="horror" data-copy="filterHorror" aria-pressed="false">Horror <span>01</span></button>
+    </div>
+    <div class="catalog-grid">
+        <article class="catalog-card" data-category="ai">
+            <div class="cover-art cover-real"><img src="~/images/the-ai-circuit-breaker.jpg" asp-append-version="true" alt="The AI Circuit Breaker book cover by Subhajit Ghosh" /></div>
+            <div class="catalog-card-info"><span class="category-label" data-copy="aiLabel">AI · NONFICTION</span><h2 data-copy="aiBookTitle">The AI Circuit Breaker</h2><p class="book-subtitle" data-copy="aiBookSubtitle">The Executive Leadership Framework for Governing CoPilots, Agents, and High-Stakes Decisions</p><p data-copy="aiBookDescription">An executive leadership framework for leading organizations where people and intelligent systems work together.</p><p class="book-published" data-copy="aiBookPublication">Published May 2, 2026 · Kindle edition</p><a class="book-buy-link" href="https://www.amazon.com/dp/B0GZCVB17F" target="_blank" rel="noopener noreferrer" data-copy="buyOnAmazon">View on Amazon <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="catalog-card" data-category="thriller">
+            <div class="cover-art cover-real"><img src="~/images/Troyee_Rohoshyo.jpg" asp-append-version="true" alt="Troyee Rohoshyo book cover" /></div>
+            <div class="catalog-card-info"><span class="category-label" data-copy="cosmicThriller">COSMIC THRILLER</span><h2 data-copy="troyeeTitle">Troyee Rohoshyo</h2><p class="book-published" data-copy="boibondhuPublisher">Publisher: Boibondhu Publisher</p><a class="book-buy-link" href="https://www.amazon.in/dp/8168521471" target="_blank" rel="noopener noreferrer" data-copy="buyOnAmazon">View on Amazon <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="catalog-card" data-category="thriller">
+            <div class="cover-art cover-real"><img src="~/images/Sher Afgan cover.jpg" asp-append-version="true" alt="Cover of Sher Afganer Tarabari by Subhajit Ghosh" /></div>
+            <div class="catalog-card-info"><span class="category-label" data-copy="historicalThriller">HISTORICAL THRILLER · ARIN ROY SERIES</span><h2 data-copy="sherAfganTitle">Sher Afganer Tarabari</h2><p class="book-published" data-copy="boibhobPublisher">Publisher: Boibhob</p><a class="book-buy-link" href="tel:+917980097112" data-copy="callToBuy">Call to buy · 79800 97112</a></div>
+        </article>
+        <article class="catalog-card" data-category="horror">
+            <div class="cover-art cover-real cover-rotirokto"><img src="~/images/Rotirokto.jpg" asp-append-version="true" alt="Rotirokto book cover" /></div>
+            <div class="catalog-card-info"><span class="category-label" data-copy="horrorLabel">HORROR · FICTION</span><h2 data-copy="rotiroktoTitle">Rotirokto</h2><p class="book-published" data-copy="anuragPublisher">Publisher: Anurag Publisher</p><a class="book-buy-link" href="https://www.amazon.in/Rotirokto-Bengali-Version-Subhojit-Ghosh/dp/B0H5KNC3VC/ref=sr_1_1?crid=1N6WDQI8A4LUD&amp;dib=eyJ2IjoiMSJ9.4PyZIYGvFRpAxHx3yu-wbA.EmLCrnH-sjjaxEWNkaAHzXFavyvMLrd3H2TaMfZrsdM&amp;dib_tag=se&amp;keywords=rotirokto&amp;qid=1793380744&amp;sprefix=rotirokto%2Caps%2C289&amp;sr=8-1" target="_blank" rel="noopener noreferrer" data-copy="buyOnAmazon">View on Amazon <span aria-hidden="true">↗</span></a></div>
+        </article>
+    </div>
+    <div class="upcoming-placeholder"><span class="upcoming-small-index">05 / FUTURE</span><div><h2 data-copy="upcomingTitle">Upcoming books</h2><p data-copy="upcomingBody">Release information will appear here after it is confirmed for public announcement.</p></div><span class="status-outline" data-copy="detailsPendingBadge">DETAILS PENDING</span></div>
+</section>
+
+<section class="books-contact"><div class="wrap books-contact-inner"><p class="eyebrow" data-copy="catalogueQuestion">Looking for a title?</p><p data-copy="catalogueAnswer">Contact the author for help finding a book.</p><a class="text-link" href="mailto:sgresearch@authorrepo.com" data-copy="catalogueContact">Email the author <span aria-hidden="true">↗</span></a></div></section>

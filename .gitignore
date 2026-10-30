@@ -1,0 +1,28 @@
+## Build output
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+[Aa]rtifacts/
+
+## Visual Studio and editors
+.vs/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Test and tooling output
+TestResults/
+coverage/
+*.log
+
+## Local secrets and environment settings
+.env
+.env.*
+!.env.example
+secrets.json
